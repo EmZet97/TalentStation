@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TalentStation.Models.Database;
 
 namespace TalentStation
 {
@@ -27,6 +29,10 @@ namespace TalentStation
         {
 
             services.AddControllers();
+            services.AddDbContext<TalentStationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DevelpomentDatabase")
+            ));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TalentStation", Version = "v1" });
