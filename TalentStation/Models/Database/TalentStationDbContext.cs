@@ -12,6 +12,7 @@ namespace TalentStation.Models.Database
     {
         public TalentStationDbContext([NotNullAttribute] DbContextOptions options) : base(options)
         {
+
         }
 
         public DbSet<UserDbModel> Users { get; set; }

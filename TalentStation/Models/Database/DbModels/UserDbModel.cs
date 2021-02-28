@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TalentStation.Models.Database.DbModels
 {
@@ -6,6 +7,9 @@ namespace TalentStation.Models.Database.DbModels
     {
         [Key]
         public int Id { get; set; }
+
+        [MaxLength(20)]
+        public string Nick { get; set; }
 
         [MaxLength(50)]
         public string Email { get; set; }
@@ -15,7 +19,5 @@ namespace TalentStation.Models.Database.DbModels
 
         [MaxLength(30)]
         public string SecondName { get; set; }
-
-        public virtual PasswordDbModel[] UserPasswords { get; set; }
     }
 }

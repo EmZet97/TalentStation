@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TalentStation.Models.Database.DbModels
 {
@@ -14,6 +15,9 @@ namespace TalentStation.Models.Database.DbModels
 
         public DateTime TimeStamp { get; set; }
 
-        public virtual UserDbModel Owner { get; set; }
+        public int UserId { get; set; }
+
+        [ForeignKey("UserId")]
+        public virtual UserDbModel User { get; set; }
     }
 }

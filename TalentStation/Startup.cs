@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TalentStation.Models.Database;
+using TalentStation.Models.Profiles;
 
 namespace TalentStation
 {
@@ -30,8 +31,9 @@ namespace TalentStation
 
             services.AddControllers();
             services.AddDbContext<TalentStationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DevelpomentDatabase")
+                options.UseSqlServer(Configuration.GetConnectionString("DevelopmentDatabase")
             ));
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 
             services.AddSwaggerGen(c =>
             {
