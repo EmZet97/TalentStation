@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentStation", "TalentStation\TalentStation.csproj", "{3E29A2A2-6DFD-4474-9974-693F64AE1CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentStation", "TalentStation\TalentStation.csproj", "{3E29A2A2-6DFD-4474-9974-693F64AE1CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{28AABE32-743D-45E1-8E7A-24A064EF5C83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{28AABE32-743D-45E1-8E7A-24A064EF5C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationMiddleware", "AuthenticationMiddleware\AuthenticationMiddleware.csproj", "{4185147C-9C6D-48BA-94DB-D22B74CBE32C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{28AABE32-743D-45E1-8E7A-24A064EF5C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28AABE32-743D-45E1-8E7A-24A064EF5C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28AABE32-743D-45E1-8E7A-24A064EF5C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4185147C-9C6D-48BA-94DB-D22B74CBE32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4185147C-9C6D-48BA-94DB-D22B74CBE32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4185147C-9C6D-48BA-94DB-D22B74CBE32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4185147C-9C6D-48BA-94DB-D22B74CBE32C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
